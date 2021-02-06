@@ -1,11 +1,234 @@
-/* CSS files add styling rules to your content */
-
+/*Body*/
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  color: rgb(60, 60, 60);
+  font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+/*------------- Nav--------------- */
+
+.topnav a {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  float: left;
+  margin: 2.2%;
+  font-size: 18px;
+}
+
+.topnav {
+  display: block;
+  margin-top: -0.4%;
+  margin-left: 34%;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  text-decoration: 3px underline rgb(74, 165, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+#icon {
+  float: left;
+  margin-left: 9.2%;
+  margin-top: 1.3%;
+}
+
+#search {
+  float: right;
+  margin-right: 12%;
+  margin-top: -3%;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+  .topnav a {
+    display: none;
+  }
+  #search {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: inline-block;
+  }
+  .footerrow {
+    display: none;
+  }
+
+  #icon {
+    margin-right: 30%;
+    float: right;
+    display: block;
+  }
+  .topnav {
+    margin: 0%;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*--------------------Home-----------------------------------*/
+#homeicon {
+  float: left;
+  margin-top: 3.8%;
+  margin-left: 40.8%;
+  width: 18.2%;
+}
+
+.homenav {
+  text-align: center;
+  margin-top: 2.8%;
+  margin-right: 1.8%;
+}
+
+.homenav a {
+  font-size: 19px;
+}
+
+#homehero {
+  width: 83%;
+  margin-top: 4%;
+  margin-left: 9.5%;
+}
+#section1body {
+  margin-left: 9.5%;
+  margin-top: 3%;
+}
+
+#subtitle1 {
+  font-size: 20px;
+}
+
+#body1 {
+  font-size: 18px;
+  line-height: 1.8;
+  text-overflow: ellipsis;
+}
+
+#oped {
+  color: gray;
+  margin-top: 2%;
+  font-family: "Roboto Mono", monospace;
+}
+
+/*-------------------Error--------------------*/
+
+.e404 {
+  margin-top: 8%;
+  margin-left: 9.2%;
+  font-family: "Roboto", sans-serif;
+  color: rgb(60, 60, 60);
+}
+
+#lost {
+  margin-top: 16%;
+}
+/*------------- Footer--------------- */
+hr {
+  style: 2px solid gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footerrow h2 {
+  font-size: 18px;
+}
+.footerrow {
+  line-height: 1.8;
+  font-size: 16px;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.right,
+.middle {
+  width: 12%;
+}
+.empty {
+  width: 35%;
+}
+.left {
+  margin-left: 8.2%;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#footericon {
+  width: 10%;
+  padding-top: 20%;
+}
+
+.pnt {
+  margin-left: 27%;
+  margin-top: 57%;
+}
+
+.pnt a {
+  text-decoration: none;
+}
+.pnt a:hover {
+  text-decoration: underline;
+}
+
+.pnt a:visited {
+  color: rgb(60, 60, 60);
+}
+/*----------------About----------------------*/
+#future {
+  margin-left: 9.2%;
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  color: black;
+}
+
+#about {
+  margin-left: 8.2%;
+  padding: 16px;
+  width: 85%;
+}
+
+.aboutbody {
+  font-size: 18px;
+  margin-left: 9.2%;
+  line-height: 1.8;
+}
+
+.aboutbody a {
+  color: #1967d2;
+}
+
+.aboutbody a:visited {
+  color: #1967d2;
 }

@@ -9,17 +9,29 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <img
-      id="icon"
-      src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fsvgexport-1.svg?v=1611199794767"
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
     />
-    <div class="topnav" id="mytopnav">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- import the webpage's javascript file -->
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="google">
+      <a href="/index.html">
+        <img
+          id="icon"
+          src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fsvgexport-1.svg?v=1611199794767"
+        />
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
       <navigation>
         <a href="/error.html">Library</a>
         <a href="/error.html">News</a>
@@ -27,12 +39,308 @@
         <a href="/error.html">Jobs</a>
         <a href="/about.html">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i
-        ></a>
+          <i class="fa fa-bars"></i>
+        </a>
       </navigation>
+      <hr class="ractive" />
     </div>
-    <p>
-      Resources
-    </p>
+    <div>
+      <img
+        id="search"
+        src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fsvgexport-7.svg?v=1611800804717"
+      />
+    </div>
+    <h1 id="rheader1">
+      A directory of essential design tools and <br />
+      resources to keep your projects moving forward
+    </h1>
+    <div class="r1row">
+      <div class="r1column r1left">
+        <div class="material">
+          <hr id="black" />
+          <p class="r1title">
+            Material Design
+            <img
+              class="ricon1"
+              src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Flogo_material_2x_web_64dp.png?v=1612771608954"
+            />
+          </p>
+          <p class="r1desc">
+            Find the latest Material Design tools,<br />
+            resources, and theory all in one place.
+          </p>
+          <ul class="r1links">
+            <li><a href="/error.html">Design</a></li>
+            <li><a href="/error.html">Develop</a></li>
+            <li><a href="/error.html">Tools</a></li>
+            <li><a href="/error.html">Gallery</a></li>
+            <li><a href="/error.html">Icons</a></li>
+          </ul>
+        </div>
+        <div class="fonts">
+          <hr class="lightblue" />
+          <p class="r1title">
+            Google Fonts
+            <img
+              class="ricon2"
+              src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fgooglefonts_avatar.png?v=1612802223083"
+            />
+          </p>
+          <p class="r1desc">
+            Making the web more beautiful, fast, <br />
+            and open through great typography.
+          </p>
+          <ul class="r1links">
+            <li><a href="/error.html">Roboto</a></li>
+            <li><a href="/error.html">Noto</a></li>
+            <li><a href="/error.html">Featured Collections </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="r1column r1right">
+        <img
+          class="banner1"
+          src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fmaterial_design.jpg?v=1612800627947"
+        />
+        <img
+          class="banner2"
+          src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Frecource_googlefonts.png?v=1612770615506"
+        />
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="resources2">
+      <div class="resources2row">
+        <div class="resources2column r2left">
+          <hr class="green" />
+          <p class="r1title">
+            People + AI Guidebook
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fpair_logo_icon.jpg?v=1612770613518"
+          />
+          <p class="r1desc">
+            Tactical guidance and best practices for <br />
+            designing human-centered AI products
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fguidebook_2x1.png?v=1612770620411"
+          />
+          <hr class="brown" />
+          <p class="r1title">
+            Cardboard
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Flogo_cardboard_color_2x_web_64dp.png?v=1612770613158"
+          />
+          <p class="r1desc">
+            Best practices for VR created by the Google <br />
+            Cardboard team.
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fcardboard.jpg?v=1612881012982"
+          />
+          <hr class="red" />
+          <p class="r1title">
+            Angular Material
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Flogo_angular_2x_web_64dp.png?v=1612770613158"
+          />
+          <p class="r1desc">
+            Angular Material is the Angular <br />
+            implementation of Material Design.
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fangular_material.jpg?v=1612881010527"
+          />
+          <hr class="paleblue" />
+          <p class="r1title">
+            Android TV
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Flogo_android_tv_color_2x_web_64dp.png?v=1612770613157"
+          />
+          <p class="r1desc">
+            Check out the latest Android TV guidelines<br />
+            for 10 foot UIs.
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fandroid_tv.jpg?v=1612881012462"
+          />
+        </div>
+        <div class="resources2column r2middle">
+          <hr class="red" />
+          <p class="r1title">
+            Actions on Google
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2FActions-on-Google_avatar.png?v=1612770614998"
+          />
+          <p class="r1desc">
+            Guidance to craft intuitive conversations <br />
+            that scale across devices and help users <br />
+            wherever they are.
+          </p>
+          <img
+            class="banner4"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2FActions-on-Google_2x1-v3.png?v=1612770615147"
+          />
+          <hr class="darkblue" />
+          <p class="r1title">
+            Wear OS by Google
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fic_wearoslogo_alpha.png?v=1612881008407"
+          />
+          <p class="r1desc">
+            The latest design guidelines for Wear OS,<br />
+            formerly Android Wear.
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fdesigngooglesite_home_2432x1216.png?v=1612881011107"
+          />
+          <hr class="darkblue" />
+          <p class="r1title">
+            Polymer Paper Elements
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Flogo_polymer_2x_web_64dp.png?v=1612881008650"
+          />
+          <p class="r1desc">
+            Paper elements are a set of elements for<br />
+            Polymer that implement Material Design.
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fpolymer_paper_elements.jpg?v=1612881008962"
+          />
+          <hr class="darkblue" />
+          <p class="r1title">
+            Augmented Reality Design
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2FView-in-AR-icon_90px.png?v=1612882903403"
+          />
+          <p class="r1desc">
+            Guidelines for building engaging AR <br />experiences.
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2FResource_AR_Design-v2.png?v=1612882907087"
+          />
+        </div>
+        <div class="resources2column r2right">
+          <hr class="darkblue" />
+          <p class="r1title">
+            Design Sprint Kit
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2FResource_content-icon-SprintKit%254010x.png?v=1612770613159"
+          />
+          <p class="r1desc">
+            Methods and recipes to help Sprint Masters <br />
+            and Facilitators run better Design Sprints.
+          </p>
+          <img
+            class="banner3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Farticle-SprintKit_2x1.png?v=1612770613158"
+          />
+
+          <hr class="orange" />
+          <p class="r1title">
+            Firebase
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Flogo_firebase_color_2x_web_64dp.png?v=1612881008100"
+          />
+          <p class="r1desc">
+            The tools and infrastructure you need to<br />
+            build better apps and grow successful<br />
+            businesses.
+          </p>
+          <img
+            class="banner5"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Ffirebase.jpg?v=1612881009583"
+          />
+          <hr class="paleblue" />
+          <p class="r1title">
+            Android Auto
+          </p>
+          <img
+            class="ricon3"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Flogo_android_auto_color_2x_web_64dp.png?v=1612881008100"
+          />
+          <p class="r1desc">
+            The new design guidelines for Android Auto
+          </p>
+          <img
+            class="banner6"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fandroid_auto.jpg?v=1612881011699"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <hr />
+      <br /><br />
+      <div class="footerrow">
+        <div class="footercolumn footerleft">
+          <h2>Google Design</h2>
+          <p>
+            Google Design is a cooperative effort led by a group of designers,
+            writers, and developers at Google. We work across teams to publish
+            original content, produce events and foster creative and educational
+            partnerships that advance design <br />and technology.
+          </p>
+          <img
+            id="footericon"
+            src="https://cdn.glitch.com/76a0cb6b-d9b8-40f8-857a-dc92e8b33884%2Fsvgexport-2.svg?v=1612407350545"
+          />
+        </div>
+        <div class="footercolumn footerempty">
+          <h2></h2>
+        </div>
+        <div class="footercolumn footermiddle">
+          <h2>Discover</h2>
+          <a>The Keyword</a><br />
+          <a>Material Design</a><br />
+          <a>Google</a>
+        </div>
+        <div class="footercolumn footerright">
+          <h2>
+            Connect
+          </h2>
+          <a>Newsletters</a><br />
+          <a>Twitter</a><br />
+          <a>Instagram</a><br />
+          <a>Facebook</a><br />
+          <a>Medium</a><br />
+          <a>Youtube</a><br />
+          <a>Dribbble</a><br />
+          <div class="pnt">
+            <a href="/error.html">Privacy</a> &
+            <a href="/error.html">Terms</a>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
   </body>
 </html>

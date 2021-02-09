@@ -3,7 +3,21 @@ body {
   color: rgb(60, 60, 60);
   font-family: "Roboto", sans-serif;
 }
+.ractive {
+  border-top: 4px solid #EC8A00;
+  margin-top: 0%;
+  width: 12%;
+  float: right;
+  margin-right: 68.5%;
+}
 
+.aactive {
+  border-top: 4px solid #4285F4;
+  margin-top: -0.5%;
+  width: 8%;
+  float: right;
+  margin-right: 51%;
+}
 /*------------- Nav--------------- */
 
 .topnav a {
@@ -45,7 +59,7 @@ body {
   margin-top: -3%;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
 @media screen and (max-width: 800px) {
   .topnav a {
     display: none;
@@ -72,7 +86,7 @@ body {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
 @media screen and (max-width: 800px) {
   .topnav.responsive {
     position: relative;
@@ -87,8 +101,101 @@ body {
     display: block;
     text-align: left;
   }
+  .ractive {
+    display: none;
+  }
+
+  .aactive {
+    display: none;
+  }
+
+  #myTopnav {
+    width: 100%;
+  }
 }
 
+/*------------- Home Nav--------------- */
+
+.topnav2 a {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  float: left;
+  margin: 2.2%;
+  font-size: 18px;
+}
+
+.topnav2 {
+  display: block;
+  margin-top: 3%;
+  margin-left: 34%;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+/* Change the color of links on hover */
+.topnav2 a:hover {
+  color: black;
+  text-decoration: 3px underline rgb(74, 165, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav2 .icon {
+  display: none;
+}
+
+#icon {
+  float: left;
+  margin-left: 9.2%;
+  margin-top: 1.3%;
+}
+
+#search {
+  float: right;
+  margin-right: 12%;
+  margin-top: -3%;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav2 a {
+    display: none;
+  }
+  #search {
+    display: none;
+  }
+
+  .topnav2 a.icon {
+    float: left;
+    display: inline-block;
+  }
+  .footerrow {
+    display: none;
+  }
+
+  #icon {
+    margin-right: 30%;
+    float: right;
+    display: block;
+  }
+  .topnav2 {
+    margin: 0%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav2.responsive {
+    position: relative;
+  }
+  .topnav2.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav2.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 /*--------------------Home-----------------------------------*/
 #homeicon {
   float: left;
@@ -137,7 +244,7 @@ body {
 }
 .bluehr {
   border-top: 4px solid #4285f4;
-  width: 82%;
+  width: 81.5%;
 }
 /*-------Section 2 -----------*/
 .s2column {
@@ -225,7 +332,7 @@ body {
   margin-top: -6%;
 }
 
-/*------------Section 3---------*/
+/*------------Section 3 + Section 5---------*/
 .section3 {
   margin-left: 9.5%;
 }
@@ -240,6 +347,24 @@ body {
   display: table;
   clear: both;
 }
+
+.section5 {
+  margin-left: 9.5%;
+}
+.section5column {
+  float: left;
+  width: 50%;
+}
+
+.s5columnright {
+  margin-left: -6%;
+}
+
+/* Clear floats after the columns */
+.section5row:after {
+  content: "";
+  display: table;
+}
 .thumbnail {
   width: 85%;
 }
@@ -250,8 +375,10 @@ body {
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: 17px;
   margin-top: -0.6%;
+  line-height: 1.4;
+  width: 100%;
 }
 
 .thumbnailtop {
@@ -277,6 +404,7 @@ body {
   font-size: 24px;
   margin-top: 3%;
   line-height: 1.4;
+  width: 100%;
 }
 .profile {
   border-radius: 50%;
@@ -284,21 +412,43 @@ body {
 }
 
 .profileinfo {
-  float: right;
-  margin-right: 60%;
+  margin-left: 9%;
+  margin-top: -6%;
 }
+
+.profileinfo2 {
+  margin-left: 9%;
+  margin-top: -6.5%;
+}
+
+.s5thumbnailtop {
+  margin-top: 8%;
+}
+
+.s5thumbnail3 {
+  width: 80%;
+  margin-top: 7%;
+}
+
+.s5thumbnailhelp {
+  width: 81%;
+  margin-top: 13%;
+}
+
 /*-----------Section 4------------*/
+.section4 {
+  overflow: hidden;
+}
+.section4row {
+  display: flex;
+}
 
 .section4column {
-  float: left;
-  width: 25%;
+  flex: 25%;
 }
 
-/* Clear floats after the columns */
-.section4row:after {
-  content: "";
-  display: table;
-  clear: both;
+.section4column4 {
+  inline-flex: 60%;
 }
 .section4 {
   margin-left: 9.5%;
@@ -312,7 +462,7 @@ body {
 }
 
 .s4intro {
-  margin-top: 6%;
+  margin-top: 20%;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -320,7 +470,7 @@ body {
 .s4thumbnail {
   width: 90%;
   margin-top: 5%;
-  margin-left: 5%;
+  margin-left: 20%;
 }
 .s4bodytitle {
   font-size: 24px;
@@ -329,10 +479,10 @@ body {
   margin-left: 5%;
 }
 .s4body {
-  margin-top:-2%;
+  margin-top: -2%;
   margin-left: 5%;
   font-size: 16px;
-  line-height:1.4;
+  line-height: 1.4;
 }
 
 .s4category {
@@ -340,8 +490,167 @@ body {
   color: gray;
   margin-top: 2%;
   font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+}
+.s4thumbnail2 {
+  margin-left: 30%;
+  margin-top: 12%;
+  width: 104%;
 }
 
+.s4text2 {
+  margin-left: 25%;
+  width: 105%;
+}
+
+.s4thumbnail3 {
+  margin-left: 55%;
+  margin-top: 12%;
+  width: 104%;
+}
+.s4text3 {
+  margin-left: 51%;
+  width: 100%;
+}
+
+.s4thumbnail4 {
+  margin-left: 75%;
+  margin-top: 12%;
+  width: 104%;
+}
+
+.s4text4 {
+  margin-left: 70%;
+  width: 100%;
+}
+/*----------Section 6-----------*/
+.section6 {
+  overflow: hidden;
+}
+.section6row {
+  display: flex;
+}
+
+.section6column {
+  flex: 25%;
+}
+
+.section6column3 {
+  flex: 20%;
+}
+
+.section6column4 {
+  inline-flex: 60%;
+}
+.section6 {
+  margin-left: 9.5%;
+}
+
+.s6thumbnail1 {
+  width: 105%;
+  margin-top: 20%;
+}
+
+.s6thumbnail2 {
+  margin-left: 20%;
+  margin-top: 20%;
+  width: 110%;
+}
+
+.s6caption {
+  line-height: 1.6;
+  margin-top: 7%;
+  width: 102%;
+}
+
+.s6twitter {
+  margin-left: 0%;
+  margin-top: 5%;
+  width: 10%;
+}
+
+.s6caption2 {
+  margin-left: 20%;
+  margin-top: 7%;
+  width: 104%;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.s6twitter2 {
+  width: 10%;
+  margin-left: 19%;
+  margin-top: 5%;
+}
+
+.s6thumbnail3 {
+  margin-left: 50%;
+  margin-top: 25%;
+  width: 130%;
+}
+
+.s6caption3 {
+  margin-left: 50%;
+  width: 122%;
+  margin-top: 7%;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.s6twitter3 {
+  margin-left: 50%;
+  width: 10%;
+  margin-top: 2%;
+}
+
+.s6thumbnailtop {
+  margin-left: 75%;
+  margin-top: 20%;
+  width: 120%;
+}
+
+.s6caption4 {
+  margin-left: 75%;
+  width: 100%;
+  margin-top: 5%;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.s6twitter4 {
+  margin-left: 75%;
+  width: 10%;
+  margin-top: 1%;
+}
+
+/*--------------Section 7-----------------*/
+.section7 {
+  margin-left: 9.5%;
+}
+.section7column {
+  float: left;
+  width: 50%;
+}
+.s7columnright {
+  margin-left: -6%;
+}
+
+/* Clear floats after the columns */
+.section7row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profileinfo7 {
+  margin-left: 9%;
+  margin-top: -7%;
+}
+
+.s7thumbnailtop {
+  margin-top: 3.7%;
+  width: 80%;
+}
 /*-------------------Error--------------------*/
 
 .e404 {
@@ -440,4 +749,229 @@ hr {
 
 .aboutbody a:visited {
   color: #1967d2;
+}
+
+/*-------------------Resources----------------------*/
+.material {
+  margin-top: 6.2%;
+  margin-left: 9.5%;
+}
+* {
+  box-sizing: border-box;
+}
+
+#rheader1 {
+  font-weight: normal;
+  margin-top: 6%;
+  margin-left: 9.5%;
+  margin-bottom: 7%;
+}
+
+.r1column {
+  float: left;
+  padding: 10px;
+}
+
+.r1left {
+  width: 30%;
+  margin-left: 9.5%;
+}
+
+.r1right {
+  width: 60.5%;
+}
+
+/* Clear floats after the columns */
+.r1row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#black {
+  border-top: 4px solid black;
+  width: 82%;
+  margin-left: -0.8%;
+  margin-bottom: 7%;
+}
+
+.lightblue {
+  border-top: 4px solid #1A73E8;
+  width: 66%;
+  margin-left: -1%;
+}
+
+.material {
+  margin-left: -1%;
+}
+
+.r1title {
+  font-size: 24px;
+  margin-top: 4%;
+  margin-right: 0;
+}
+
+.ricon1 {
+  width: 11%;
+  float: right;
+  margin-right: 20%;
+  margin-top: -2%;
+}
+
+.r1desc {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.r1links a {
+  text-decoration: none;
+  color: #1967d2;
+  border-bottom: 1px solid #1967d2;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.r1links {
+  margin-left: -6%;
+}
+
+.banner1 {
+  width: 90%;
+  margin-left: -2%;
+  margin-top: 3%;
+}
+
+.lightblue {
+  border-top: 4px solid #1A73E8;
+  width: 82%;
+  margin-bottom: 7%;
+}
+
+.fonts {
+  margin-top: 38%;
+}
+
+.ricon2 {
+  width: 10%;
+  float: right;
+  margin-right: 19%;
+  margin-top: -2%;
+}
+
+.banner2 {
+  width: 90%;
+  margin-left: -2%;
+  margin-top: 8%;
+}
+.resources2 {
+  margin-left: 9.5%;
+}
+.resources2column {
+  float: left;
+  width: 30.5%;
+}
+.resources2row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.r2middle {
+  margin-left: 2%;
+}
+
+.r2right {
+  margin-left: 2%;
+}
+
+.green {
+  border-top: 4px solid #00695C;
+}
+
+.red {
+  border-top: 4px solid #de3641;
+}
+
+.darkblue {
+  border-top: 4px solid #1c53a2;
+}
+.brown {
+  border-top: 4px solid #884f21;
+  margin-bottom: 20%;
+}
+
+.orange {
+  border-top: 4px solid #ffa000;
+}
+.paleblue {
+  border-top: 4px solid #039be5;
+}
+
+.resources2 hr {
+  margin-bottom: 7%;
+  margin-bottom: 7%;
+  width: 87%;
+  margin-left: -0.6%;
+}
+.banner3 {
+  width: 85%;
+  margin-bottom: 12%;
+  margin-top: 10%;
+}
+
+.ricon3 {
+  width: 11%;
+  float: right;
+  margin-right: 10%;
+  margin-top: -14%;
+}
+
+.banner4 {
+  width: 85%;
+  margin-top: 3%;
+  margin-bottom: 12.7%;
+}
+
+.banner5 {
+  width: 85%;
+  margin-top: 3%;
+  margin-bottom: 12%;
+}
+
+.banner6 {
+  margin-top: 17%;
+  width: 85%;
+}
+
+@media screen and (max-width: 800px) {
+  .resources2column {
+    width: 40%;
+  }
+
+
+.banner2 {
+  margin-top: 70%;
+}
+
+.r1title {
+  width: 50%;
+}
+
+.ricon3 {
+  margin-top: -30%;
+}
+
+.ricon1 {
+  margin-right: -30%;
+  width: 28%;
+}
+
+.ricon2 {
+  margin-right: -30%;
+  width: 28%;
+}
+
+.r1desc {
+  width: 80%;
+}
 }

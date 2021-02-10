@@ -14,6 +14,14 @@ function myFunction2() {
   if (x.className === "topnav2") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "topnav2";
   }
 }
+
+// const best = () =>{
+//   $('#section1body').click(function(){
+//                            window.location.href ='/best.html'
+//                            })
+// }
+
+// best()

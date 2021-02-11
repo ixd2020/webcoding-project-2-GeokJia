@@ -18,10 +18,3 @@ function myFunction2() {
   }
 }
 
-// const best = () =>{
-//   $('#section1body').click(function(){
-//                            window.location.href ='/best.html'
-//                            })
-// }
-
-// best()

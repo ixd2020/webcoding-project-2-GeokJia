@@ -18,6 +18,14 @@ body {
   float: right;
   margin-right: 51%;
 }
+
+.s2bodyright {width:80%;}
+.s2body1 {width:80%;}
+.section3column p {width:80%;}
+.section4column p{width:80%;}
+.section5column p {width:80%;}
+.section6column p {width:80%;}
+.section7column p {width:80%}
 /*------------- Nav--------------- */
 
 .top-nav {
@@ -127,8 +135,10 @@ body {
   text-decoration: none;
   color: rgb(80, 80, 80);
   float: left;
-  margin: 2.2%;
+  margin-left: 2%;
+  text-align: center;
   font-size: 18px;
+  padding-left: 2%;
 }
 
 .topnav2 {
@@ -142,7 +152,7 @@ body {
 /* Change the color of links on hover */
 .topnav2 a:hover {
   color: black;
-  text-decoration: 3px underline rgb(74, 165, 255);
+  text-decoration: 3px underline rgb(200, 200, 200);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -164,9 +174,6 @@ body {
 
 @media screen and (max-width: 800px) {
   .topnav2 a {
-    display: none;
-  }
-  #search {
     display: none;
   }
 
@@ -554,8 +561,25 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .section4column {
-    width: 100%;
+  .s4hover {
+    display: none;
+  }
+  .s4responsive2 {
+    width: 250%;
+    margin-left: 20%;
+  }
+  .s4intro {
+    width: 150%;
+    font-size: 16px;
+  }
+  .s4responsive {
+    font-size: 16px;
+  }
+  .moreresponsive {
+    font-size: 14px;
+    float: right;
+    margin-right: %;
+    margin-top: -15%;
   }
 }
 /*----------Section 6-----------*/
@@ -657,7 +681,21 @@ body {
   width: 10%;
   margin-top: 1%;
 }
-
+@media screen and (max-width: 800px) {
+  .section6column3 {
+    display: none;
+  }
+  .s6res2 {
+    width: 190%;
+    margin-left: 70%;
+  }
+  .s6res {
+    width: 130%;
+  }
+  .s6hide {
+    display: none;
+  }
+}
 /*--------------Section 7-----------------*/
 .section7 {
   margin-left: 9.5%;
@@ -988,8 +1026,6 @@ hr {
   .resources2column {
     width: 100%;
   }
-  
-
 
   .banner2 {
     margin-top: 300%;
@@ -999,16 +1035,13 @@ hr {
     width: 50%;
   }
 
-
-    .ricon2 {
-display:none;
+  .ricon2 {
+    display: none;
   }
 
   .ricon1 {
- display:none;
+    display: none;
   }
-
-
 
   .r1desc {
     width: 80%;
@@ -1034,7 +1067,7 @@ display:none;
 .quote1:hover {
   display: inline-block;
   padding: 1.5%;
-  width: 80%;
+  width: 90%;
   box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1053,7 +1086,7 @@ display:none;
   float: left;
 }
 
-.s4text3
+
 
 /*-------------------- Best -----------------------------  */
 
